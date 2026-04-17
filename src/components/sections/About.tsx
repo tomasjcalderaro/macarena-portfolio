@@ -6,7 +6,7 @@ type Props = {
 
 const About = ({ setOpenAbout }: Props) => {
     return (
-    <section className="bg-beige py-20 px-8">
+    <section className="bg-beige py-20 px-4 md:px-8">
 
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
 

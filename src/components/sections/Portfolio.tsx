@@ -30,7 +30,7 @@ const item = {
 
 const Portfolio = () => {
     return (
-    <section id="portfolio" className="bg-cream py-16 px-8">
+    <section id="portfolio" className="bg-cream py-16 px-4 md:px-8">
 
         <h2 className="text-3xl md:text-4xl font-bold text-brown text-center mb-12">
         Portfolio

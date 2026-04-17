@@ -53,3 +53,6 @@
 html, body {
   overflow-x: hidden;
 }
+* {
+  outline: 1px solid red;
+}

@@ -182,7 +182,3 @@
     border-right-color: var(--border);
   }
 }
-
-* {
-  outline: 1px solid red;
-}

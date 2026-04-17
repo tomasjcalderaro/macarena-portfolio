@@ -4,7 +4,7 @@ type Props = {
 
 const CTA = ({ setOpenContact }: Props) => {
     return (
-    <section className="bg-brown text-white py-20 px-8 text-center">
+    <section className="bg-brown text-white py-20 px-4 md:px-8 text-center">
 
         <div className="max-w-3xl mx-auto">
 
