@@ -14,7 +14,7 @@ function App() {
   const [openAbout, setOpenAbout] = useState(false)
 
   return (
-    <div className="bg-cream min-h-screen">
+    <div className="bg-cream min-h-screen overflow-x-hidden">
 
       <Navbar 
         setOpenContact={setOpenContact}

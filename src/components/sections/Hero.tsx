@@ -7,7 +7,7 @@ type Props = {
 
 const Hero = ({ setOpenContact }: Props) => {
     return (
-    <section className="bg-cream min-h-[80vh] flex items-center px-4 md:px-8">
+    <section className="bg-cream min-h-[80vh] flex items-center px-4 md:px-8 overflow-hidden">
 
         <div className="max-w-6xl mx-auto w-full flex flex-col-reverse md:flex-row items-center gap-8 md:gap-10">
 

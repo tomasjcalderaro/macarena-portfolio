@@ -50,3 +50,6 @@
 .hover\:animate-bounceIcon:hover {
   animation: bounceIcon 0.6s;
 }
+html, body {
+  overflow-x: hidden;
+}

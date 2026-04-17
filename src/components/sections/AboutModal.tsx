@@ -12,23 +12,25 @@ const AboutModal = ({ setOpenAbout }: Props) => {
     >
 
         <div
-        className="bg-beige w-full max-w-2xl max-h-[90vh] overflow-y-auto p-5 md:p-8 rounded-2xl relative animate-scaleIn"
+        className="bg-beige w-full max-w-2xl mx-auto max-h-[90vh] overflow-y-auto p-5 md:p-8 rounded-2xl relative animate-scaleIn"
         onClick={(e) => e.stopPropagation()}
         >
 
         {/* Cerrar */}
+        <div className="flex justify-center">
         <button
             onClick={() => setOpenAbout(false)}
             className="absolute top-3 right-3 md:top-4 md:right-4 text-brown text-lg md:text-xl hover:scale-110 transition"
         >
             ✕
         </button>
+        </div>
 
         <h2 className="text-2xl md:text-3xl font-bold text-brown mb-3 md:mb-4 text-center">
             Sobre mí
         </h2>
 
-        <p className="text-sm md:text-base text-brownLight mb-6 md:mb-8 text-center leading-relaxed">
+        <p className="text-sm md:text-base text-brownLight mb-6 md:mb-8 text-center leading-relaxed max-w-[90%] sm:max-w-md mx-auto break-words">
             Trabajo con herramientas de diseño y edición para crear contenido
             visual atractivo y estrategias que conectan con la audiencia.
         </p>
