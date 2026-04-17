@@ -8,7 +8,7 @@ const About = ({ setOpenAbout }: Props) => {
     return (
     <section className="bg-beige py-20 px-4 md:px-8">
 
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
+        <div className="flex flex-col items-center text-center gap-6 md:gap-10 max-w-4xl mx-auto">
 
         {/* VIDEO */}
         <motion.div
@@ -33,8 +33,8 @@ const About = ({ setOpenAbout }: Props) => {
 
         {/* TEXTO */}
         <motion.div
-            initial={{ opacity: 0, x: 80 }}
-            whileInView={{ opacity: 1, x: 80 }}
+            initial={{ opacity: 0, x: 40 }}
+            whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1.2 }}
             viewport={{ once: true }}
             className="w-full md:w-1/2"
@@ -43,7 +43,7 @@ const About = ({ setOpenAbout }: Props) => {
             Sobre mí
             </h2>
 
-            <p className="text-brownLight leading-relaxed mb-6">
+            <p className="max-w-md mx-auto text-center text-sm md:text-base text-brownLight mb-6 md:mb-8 leading-relaxed">
             Soy Macarena, Community Manager enfocada en crear contenido
             visual atractivo y estrategias que hacen crecer marcas en redes.
             </p>
@@ -54,7 +54,7 @@ const About = ({ setOpenAbout }: Props) => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
             viewport={{ once: true }}
-            className="bg-brown text-white px-6 py-3 rounded-xl hover:bg-brownLight transition hover:scale-105"
+            className="bg-brown text-white px-6 py-3 rounded-xl hover:bg-brownLight transition hover:scale-105 mx-auto block"
             >
                 Ver más
             </motion.button>
