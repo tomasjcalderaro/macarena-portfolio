@@ -12,9 +12,9 @@ const About = ({ setOpenAbout }: Props) => {
 
         {/* VIDEO */}
         <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
+            initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true }}
             className="w-full md:w-1/2 relative"
         >
@@ -33,9 +33,9 @@ const About = ({ setOpenAbout }: Props) => {
 
         {/* TEXTO */}
         <motion.div
-            initial={{ opacity: 0, x: 40 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1.2 }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
             viewport={{ once: true }}
             className="w-full md:w-1/2"
         >
@@ -50,11 +50,13 @@ const About = ({ setOpenAbout }: Props) => {
 
             <motion.button
             onClick={() => setOpenAbout(true)}
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 }}
+            transition={{ delay: 0.4 }}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.97 }}
             viewport={{ once: true }}
-            className="bg-brown text-white px-6 py-3 rounded-xl hover:bg-brownLight transition hover:scale-105 mx-auto block"
+            className="bg-brown text-white px-6 py-3 rounded-xl hover:bg-brownLight transition mx-auto block"
             >
                 Ver más
             </motion.button>
