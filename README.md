@@ -15,7 +15,7 @@ Landing page desarrollada con React, TypeScript y TailwindCSS.
 - Integración con WhatsApp
 
 ## 📸 Preview
-(agregar imagen después)
+(próximamente)
 
 ## 🌐 Deploy
 (próximamente)
