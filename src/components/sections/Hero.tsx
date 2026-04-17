@@ -7,23 +7,23 @@ type Props = {
 
 const Hero = ({ setOpenContact }: Props) => {
     return (
-    <section className="bg-cream min-h-[80vh] flex items-center px-8">
+    <section className="bg-cream min-h-[80vh] flex items-center px-4 md:px-8">
 
-        <div className="max-w-6xl mx-auto w-full flex flex-col md:flex-row items-center gap-10">
+        <div className="max-w-6xl mx-auto w-full flex flex-col-reverse md:flex-row items-center gap-8 md:gap-10">
 
         {/* TEXTO */}
         <motion.div
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.8 }}
-            className="w-full md:w-1/2"
+            className="w-full md:w-1/2 text-center md:text-left"
         >
 
-            <h1 className="text-4xl md:text-5xl font-bold text-brown mb-6 leading-tight">
+            <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-brown mb-4 md:mb-6 leading-tight">
             Potenciá tu marca en redes sociales
             </h1>
 
-            <p className="text-brownLight mb-8 leading-relaxed">
+            <p className="text-sm sm:text-base md:text-lg text-brownLight mb-6 md:mb-8 leading-relaxed">
             Ayudo a marcas a crecer con estrategias de contenido,
             diseño y gestión profesional.
             </p>
@@ -41,23 +41,22 @@ const Hero = ({ setOpenContact }: Props) => {
         <motion.div
             initial={{ x: 100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 2, delay: 0.2 }}
+            transition={{ duration: 1, delay: 0.2 }}
             className="w-full md:w-1/2 flex justify-center"
         >
 
             <img
             src={macarenaImg}
             alt="Macarena"
-            className="w-[300px] md:w-[380px] rounded-2xl shadow-xl object-cover"
+            className="w-[220px] sm:w-[280px] md:w-[380px] rounded-2xl shadow-xl object-cover"
             />
 
         </motion.div>
 
         </div>
 
-        </section>
+    </section>
     )
 }
 
 export default Hero
-

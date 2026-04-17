@@ -28,7 +28,7 @@ const Navbar = ({ setOpenContact, setOpenAbout }: Props) => {
         }`}
     >
 
-        <ul className="flex gap-6 text-lg text-brown items-center">
+        <ul className="hidden md:flex gap-6 text-base md:text-lg font-medium text-brown items-center">
 
             <li>
                 <Link to="/">Inicio</Link>

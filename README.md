@@ -18,4 +18,4 @@ Landing page desarrollada con React, TypeScript y TailwindCSS.
 (próximamente)
 
 ## 🌐 Deploy
-(próximamente)
+https://macarena-portfolio-delta.vercel.app/

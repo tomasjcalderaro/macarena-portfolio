@@ -22,7 +22,7 @@ const categories = [
 
 const PortfolioFull = () => {
     return (
-    <section className="bg-beige py-20 px-8">
+    <section className="bg-beige py-20 px-4 md:px-8">
 
         <div className="max-w-6xl mx-auto">
 
@@ -37,7 +37,7 @@ const PortfolioFull = () => {
                 {category.title}
             </h3>
 
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
 
                 {category.items.map((item) => (
                 <div
@@ -47,7 +47,7 @@ const PortfolioFull = () => {
                     <img
                     src={item.image}
                     alt="portfolio"
-                    className="w-full h-[200px] object-cover group-hover:scale-110 transition duration-500"
+                    className="w-full h-[160px] sm:h-[200px] md:h-[250px] object-cover group-hover:scale-110 transition duration-500"
                     />
                 </div>
                 ))}
